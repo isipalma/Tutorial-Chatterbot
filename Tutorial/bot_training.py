@@ -1,8 +1,6 @@
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 
-# chatbot = ChatBot("Johnny Five", read_only=True)  inhabilita el entrenamiento
-chatbot_train = ChatBot("InvBot")
 
 conversacion = [
     "Hola!",
@@ -13,14 +11,15 @@ conversacion = [
     "Yo te hare una recomendacion"
 ]
 
-chatbot_train.set_trainer(ListTrainer)
+######
+chatbot = ChatBot("Aprendiz")
+chatbot.set_trainer(ListTrainer)
 # recibe una lista ordenada con frases
-#chatbot_train.train(conversacion)
+chatbot.train(conversacion)
+#######
 
-
-# Para entrenar con un corpus
-
-
+# Para entrenar con un corpus utilizando un archivo json descomente lo siguiente y comente la seccion encerrada con ###
+"""
 chatbot = ChatBot(
     'Export Example Bot',
     trainer='chatterbot.trainers.ChatterBotCorpusTrainer',
@@ -30,12 +29,12 @@ chatbot = ChatBot(
     output_format="text",
     database='./db_tutorial_esp.json'
 )
-
+"""
 chatbot.train('chatterbot.corpus.spanish')
 
-
-
 print("termine de entrenar")
+
+
 
 
 
