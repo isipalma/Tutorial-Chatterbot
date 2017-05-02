@@ -217,6 +217,8 @@ chatbot = ChatBot(
     output_adapter="chatterbot.output.OutputAdapter",
     output_format="text",
     database='./db_tutorial_esp.json')```
+    
+    
 Este mensaje aparece pues se recomienda no utilizar json para procesos demasiado grandes.
 
 Para evitar los mensajes de la libreria la primera vez que corra su codigo debe poseer los permisos de la libreria, y para esto agregue las siguientes lineas de codigo al inicio de su programa, pero para las proximas ocasiones en que lo corra borrelas.
