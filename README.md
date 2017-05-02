@@ -47,7 +47,7 @@ Para este objetivo la libreria chatterbot ofrece cuatro metodos de entrenamiento
 Este método consiste en hacer entrenar al bot en base a una lista donde cada elemento es una frase de una conversacion y se rige segun un orden donde el elemento en la posicion i+1 corresponde a la respuesta a la frase en la posicion i. En otras palabras, la lista que recibe el bot es una secuencia de frases ordenadas secuencialmente que forman una sola conversacion. Cabe destacar que el bot puede recibir más de una lista para entrenar.
 
 Ejemplo:
-```python
+```
 from chatterbot.trainers import ListTrainer
 
 chatbot = ChatBot("Ejemplo")
