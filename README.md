@@ -216,7 +216,8 @@ chatbot = ChatBot(
     input_adapter="chatterbot.input.VariableInputTypeAdapter",
     output_adapter="chatterbot.output.OutputAdapter",
     output_format="text",
-    database='./db_tutorial_esp.json')```
+    database='./db_tutorial_esp.json')
+```
     
     
 Este mensaje aparece pues se recomienda no utilizar json para procesos demasiado grandes.
