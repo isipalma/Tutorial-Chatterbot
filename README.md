@@ -141,14 +141,14 @@ Es bastante importante que agreguemos un parametro llamado Read_only=True, ya qu
 
 El bot que se instancie puede recibir distintos parametros, lo cual lo hace bastante personalizable, pero el más básico es:
 
-```python
+```
 from chatterbot import ChatBot
 chatbot = ChatBot("Samuel Simplesco", read_only=True)```
 
 Este bot tomara una base de datos predefinida (database.db) ya que ninguna fue especificada en los parametros.
 
 Ahora, para darle un input y obtener una respuesta se utiliza el metodo .get_response(string). Este metodo entega un string, a menos que el parametro output_format del bot sea distinto a 'text'.
-```python
+```
 entrada = input("Ingrese frase")
 respuesta = chatbot.get_response(entrada)
 print(respuesta)```
@@ -159,7 +159,7 @@ Como ya se menciono antes esta libreria es bastante versatil y personalizable, p
 
 Para esto basta con crear tu clase que herede de    e implemente los metodos básicos de esa clase. He aqui un ejemplo al crear un adaptador logico propio:
 
-```python
+```
 from chatterbot.logic import LogicAdapter
 # heredo de la clase LogicAdapter
 class MyLogicAdapter(LogicAdapter):
@@ -208,7 +208,7 @@ Si aparecen advertencias indeseadas en la consola, ya sean por el JsonFileStorag
 
 Para evitar el warning de JsonFileStorageAdapter debe agregar el keyword silence_performance_warning=True entre los parametros del bot.
 
-```python
+```
 chatbot = ChatBot(
     "My ChatterBot", read_only=True,
     storage_adapter='chatterbot.storage.JsonFileStorageAdapter',
@@ -221,7 +221,7 @@ Este mensaje aparece pues se recomienda no utilizar json para procesos demasiado
 
 Para evitar los mensajes de la libreria la primera vez que corra su codigo debe poseer los permisos de la libreria, y para esto agregue las siguientes lineas de codigo al inicio de su programa, pero para las proximas ocasiones en que lo corra borrelas.
 
-```python
+```
 import ssl
 
 try:    
