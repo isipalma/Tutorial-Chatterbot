@@ -1,7 +1,6 @@
 ## Tutorial-Chatterbot ##
 
-Tutorial de como crear su propio chat bot paso a paso y se detallan las especificaciones de como personalizarlo para distintos usos
-s
+Tutorial de cómo crear su propio chat bot paso a paso y se detallan las especificaciones de como personalizarlo para distintos usos.
 # Requisitos previos: #
 Para poder utilizar chatterbot hay que instalar:
 
